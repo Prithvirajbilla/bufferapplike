@@ -2,6 +2,7 @@ from email import send_simple_message
 from conf import *
 import glob
 import os
+import shutil
 import datetime
 def get_files(directory):
 	os.chdir(directory)
@@ -25,7 +26,23 @@ def get_now_files(files):
 
 def buffer_post(directory):
 	files = get_files(directory)
+	archived_directory = directory+"/archives"
 	real_files = get_now_files(files)
+	for i in real_files:
+		filename = directory+"/"+i
+		f = open(filename,"r")
+		line = f.readlines()
+		subject = line[0]
+		message = ""
+		try:
+			for k in line[1:]:
+				message =message+k
+		except Exception,e:
+			print e
+		send_simple_message(subject,message)
+		# print subject,message
+		shutil.move(filename,archived_directory+"/"+i)
 
 
 
+# buffer_post("/home/madhukar/bufferapplike")
