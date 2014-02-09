@@ -9,4 +9,3 @@ def send_simple_message(subject, content):
                   "subject": subject,
                   "text": content})
 
-print send_simple_message("This is good","good")

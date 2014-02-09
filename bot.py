@@ -1,5 +1,6 @@
 from conf import *
 from hackernews import *
+from email import *
 
 def auto_post():
 	hn = HackerNews(key=XMashapeAuthorization)
@@ -13,7 +14,7 @@ def auto_post():
 				message+= "Published "+ js[i]["published_time"]+"\n"
 				message+= "Category:Best Links"
 				subject = js[i]["link"]
-				print message,subject
+				send_simple_message(subject, message)
 			except Exception,e:
 				pass
 
@@ -26,7 +27,7 @@ def auto_post():
 				message+= "Published "+ js[i]["published_time"]+"\n"
 				message+= "Category:Top links"
 				subject = js[i]["link"]
-				print message,subject
+				send_simple_message(subject, message)
 			except Exception,e:
 				pass
 
@@ -39,7 +40,7 @@ def auto_post():
 				message+= "Published "+ js[i]["published_time"]+"\n"
 				message+= "Category:Newest links"
 				subject = js[i]["link"]
-				print message,subject
+				send_simple_message(subject, message)
 			except Exception,e:
 				pass
 
