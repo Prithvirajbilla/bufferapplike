@@ -4,6 +4,7 @@ import glob
 import os
 import shutil
 import datetime
+
 def get_files(directory):
 	os.chdir(directory)
 	lsfiles = glob.glob("*.txt")
