@@ -35,7 +35,7 @@ I'm running a cron job for every few seconds.
 Other ideas
 ===========
 There exists an IFTTT recipe,
-While we store a link (or mark it as view later in pocket) =>  a txt file will be saved to dropbox (but with different name). if we work a way around such that we can save it directly save with the required name we wanted.
+When we store a link (or mark it as view later in pocket) =>  a txt file will be saved to dropbox (but with different name). if we work a way around such that we can save it directly save with the required name we wanted.
 that would be great.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Prithvirajbilla/bufferapplike/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
