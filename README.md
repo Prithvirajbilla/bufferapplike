@@ -13,7 +13,7 @@ Idea
 
 Its simple actually.
 
-Thing you might need.
+Things you might need.
 
 * [IFTTT account] (https://ifttt.com)
 * dropbox account
