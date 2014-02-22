@@ -30,7 +30,7 @@ whenever i send a mail to trigger@ifttt.com the post is posted to fb | twitter |
 
 What i did was, i was using a free mailgun account. I made a ifttt recipe such that whenever i recieve a new mail from XXX@mailgun.com i'm posting the mail to the social media.
 
-I'm running a cron job for every few seconds.
+I'm running a cron job for every few minutes.
 
 Other ideas
 ===========
