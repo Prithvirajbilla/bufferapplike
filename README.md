@@ -32,6 +32,8 @@ What i did was, i was using a free mailgun account. I made a ifttt recipe such t
 
 I'm running a cron job for every few minutes.
 
+rename conf_demo.py to conf.py
+
 Other ideas
 ===========
 There exists an IFTTT recipe,
